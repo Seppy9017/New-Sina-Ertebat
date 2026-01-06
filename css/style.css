@@ -217,7 +217,7 @@ button {
   text-align: center;
   font-weight: 500;
   transition: ease-in all 0.5s;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .read_more:hover {
@@ -225,7 +225,7 @@ button {
   /* background: #7f85f7; */
   color: #fff;
   transition: ease-in all 0.5s;
-} 
+}
 
 .img_responsive {
   max-width: 100%;
@@ -850,12 +850,12 @@ ul.email li {
   font-size: 15px;
   line-height: 29px;
   position: relative;
-  padding-left: 27px;
+  padding-right: 27px;
 }
 .helpful ul li a::before {
   position: absolute;
   content: "";
-  left: 0;
+  right: 0;
   background: #ecc647;
   /* background: #7b80ee; */
   width: 13px;
@@ -877,7 +877,7 @@ ul.email li {
 }
 
 ul.social_icon {
-  float: left;
+  float: right;
   padding-top: 20px;
 }
 
@@ -901,6 +901,9 @@ ul.social_icon li a {
   border-radius: 100%;
   font-size: 20px;
   font-weight: bold;
+  padding: 2px;
+  padding-right: 5.9px;
+  padding-top: 3px;
 }
 
 ul.social_icon li a:hover {
@@ -908,7 +911,7 @@ ul.social_icon li a:hover {
   /* background: #7b80ee; */
   color: #fff;
   transform: rotate(360deg);
-  transition: ease-in all 0.05s;
+  transition: ease-in all 0.5s;
 }
 
 .ente {

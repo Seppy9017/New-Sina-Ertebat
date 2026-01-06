@@ -34,6 +34,7 @@ body {
   font-family: "vazirmatn" !important;
   margin-top: 180px;
   direction: rtl;
+  text-align: right;
   /* margin: auto; */
   background-color: #fefefe;
 }
@@ -84,7 +85,7 @@ nav {
   width: 100vw;
   z-index: 99999;
   background-color: #333 !important;
-  transition: background ease 0.2s;
+  transition: background ease 0.4s;
 }
 
 header {
@@ -162,8 +163,8 @@ i {
 #link-box a {
   border: 3px solid var(--color-secondary);
   background-color: var(--color-background);
-  padding: 10px;
-  border-radius: 20px;
+  padding: 11px;
+  border-radius: 25px;
   text-decoration: none;
   color: var(--color-primary);
   margin: 10px;
@@ -341,7 +342,7 @@ label {
   direction: ltr;
 }
 .scrolled {
-  background-color: rgba(133, 133, 133, 0.95) !important;
+  background-color: rgba(133, 133, 133, 0.96) !important;
 }
 .footer {
   padding-bottom: 60px !important;
@@ -351,20 +352,32 @@ label {
 } */
 
 /* loader */
-#loader {
+/* HTML: <div class="loader"></div> */
+.loader {
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
   width: 100px;
   height: 100px;
   margin: auto;
-  top: 30%;
+  top: 40%;
   left: 47%;
   position: absolute;
-  border: 7px solid var(--color-secondary);
-  border-bottom-color: transparent;
-  border-top-color: transparent;
-  border-radius: 50%;
   display: flex;
-  animation: rotation 0.8s linear infinite;
 }
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 #loader-container {
   width: 100vw;
   height: 100vh;
@@ -375,19 +388,7 @@ label {
   z-index: 9999999;
   overflow: hidden;
 }
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/* loader end */
-/* .read_more{
-  background-color: #ecc647;
-  color: #fefefe;
-} */
+
 .darkButt {
   background: #ecc647;
   color: #333;

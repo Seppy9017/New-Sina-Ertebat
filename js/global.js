@@ -2,7 +2,7 @@ const loaderContainer = document.getElementById("loader-container");
 
 setTimeout(() => {
   loaderContainer.style.display = "none";
-}, 1500);
+}, 1000);
 // loader end
 const modeButton = document.querySelectorAll(".toggle-checkbox");
 const readMoreButts = document.querySelectorAll(".dark-buttons");
