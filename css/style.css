@@ -454,6 +454,7 @@ ul.email li {
   background: inherit;
   /* background: #fefefd; */
   padding-top: 200px;
+  direction: ltr;
 }
 
 .about .titlepage {
@@ -469,7 +470,7 @@ ul.email li {
   position: absolute;
   content: "";
   bottom: 0;
-  background: #ffebb8;
+  background: #ffda7d;
   /* background: #dee4fd; */
   left: 0;
   width: 83%;
@@ -478,7 +479,18 @@ ul.email li {
 }
 
 .about_img figure img {
-  z-index: 9999;
+  /* -moz-transform: scaleX(-1);
+
+  -o-transform: scaleX(-1);
+
+  -webkit-transform: scaleX(-1);
+
+  transform: scaleX(-1);
+
+  filter: FlipH;
+
+  -ms-filter: "FlipH"; */
+  z-index: 999;
   position: relative;
   padding-bottom: 30px;
   text-align: right;
@@ -514,7 +526,7 @@ ul.email li {
   margin-top: 30px;
   background: #f7f7f7;
   padding: 90px 0 60px 0;
-  border-radius: 80px;
+  border-radius: 70px;
   transition: ease-in all 0.5s;
 }
 .cameras_img figure {
@@ -557,7 +569,7 @@ ul.email li {
   cursor: pointer;
 }
 #ho_bg:hover.cameras_text p {
-  color: #333;
+  color: #333 !important;
   /* color: #fff; */
   transition: ease-in all 0.5s;
 }
@@ -907,9 +919,9 @@ ul.social_icon li a {
 }
 
 ul.social_icon li a:hover {
-  background: #ecc647;
+  color: #ecc647;
   /* background: #7b80ee; */
-  color: #fff;
+  background-color: #333;
   transform: rotate(360deg);
   transition: ease-in all 0.5s;
 }
@@ -945,30 +957,7 @@ ul.social_icon li a:hover {
   transition: ease-in all 0.5s;
 }
 
-.copyright {
-  background: #fff;
-  margin-top: 130px;
-}
 
-.copyright p {
-  color: #252525;
-  padding: 20px 0px;
-}
-
-.copyright a {
-  color: #252525;
-}
-
-.copyright a:hover {
-  color: #7b80ee;
-}
-
-/** end footer **/
-
-/*- - ener page css--*/
-.inner_page header {
-  background: #8187fa;
-}
 .inner_page .padd_30 {
   padding: 0px;
 }

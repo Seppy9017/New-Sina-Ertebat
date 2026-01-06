@@ -25,6 +25,7 @@ const darkHandler = () => {
   headers2.forEach((h2) => h2.classList.toggle("darkText"));
   readMoreButts.forEach((but) => but.classList.toggle("darkButt"));
   sideA.forEach((a) => a.classList.toggle("sidecolor"));
+  sidebar.style.borderTop = "  #ecc647 5px solid";
 };
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {

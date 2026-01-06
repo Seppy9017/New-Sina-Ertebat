@@ -1,159 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Zlymo</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- awesome fontfamily -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout inner_page">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="" /></div>
-      </div>
-      <!-- end loader -->
-      <div id="mySidepanel" class="sidepanel">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-         <a href="index.html">Home</a>
-         <a class="active" href="about.html">About</a>
-         <a href="company.html">Company</a>
-         <a href="cctv.html">CCTV</a>
-         <a href="testimonial.html">Testimonial</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-      <div class="padd_30">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Sina Ertebat</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- site logo  -->
+    <link rel="icon" href="./images/sinaertebat.png" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!--[if lt IE 9]> ><![endif]-->
+    <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <!-- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+  </head>
+  <!-- body -->
+  <body class="main-layout inner_page">
+    <!-- loader  -->
+    <div id="loader-container">
+      <div class="loader" id="loader"></div>
+    </div>
+    <div class="padd_30">
       <!-- header -->
       <header>
-         <!-- header inner -->
-         <div class="head-top">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-sm-3">
-                     <div class="logo">
-                        <a href="index.html">Zlymo</a>
-                     </div>
-                  </div>
-                  <div class="col-sm-9">
-                     <ul class="email text_align_right">
-                        <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
-                     </ul>
-                  </div>
-               </div>
+        <nav>
+          <div id="nav-head">
+            <img
+              src="./images/site-logo.png"
+              id="site-logo-img"
+              alt="site logo"
+            />
+            <div id="search">
+              <input
+                type="text"
+                placeholder="محصول مورد نظر را جست‌و‌جو کنید"
+              />
+              <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
-         </div>
+            <!-- From Uiverse.io by JkHuger -->
+          </div>
+          <div id="nav-links">
+            <div id="link-box">
+              <a href="index.html" class="nav-link link-active">
+                <i class="fa-solid fa-user"></i> خانه
+              </a>
+              <a href="contact.html" class="nav-link">
+                <i class="fa-solid fa-comment"></i>
+                ارتباط با ما
+              </a>
+              <a href="about.html" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                درباره ما
+              </a>
+              <a href="shop.html" class="nav-link">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                فروشگاه
+              </a>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" />
+              <div class="toggle-slot">
+                <div class="sun-icon-wrapper">
+                  <div
+                    class="iconify sun-icon"
+                    data-icon="feather-sun"
+                    data-inline="false"
+                  ></div>
+                </div>
+                <div class="toggle-button"></div>
+                <div class="moon-icon-wrapper">
+                  <div
+                    class="iconify moon-icon"
+                    data-icon="feather-moon"
+                    data-inline="false"
+                  ></div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </nav>
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+        <label>
+          <input class="toggle-checkbox" type="checkbox" />
+          <div class="toggle-slot">
+            <div class="sun-icon-wrapper">
+              <div
+                class="iconify sun-icon"
+                data-icon="feather-sun"
+                data-inline="false"
+              ></div>
+            </div>
+            <div class="toggle-button"></div>
+            <div class="moon-icon-wrapper">
+              <div
+                class="iconify moon-icon"
+                data-icon="feather-moon"
+                data-inline="false"
+              ></div>
+            </div>
+          </div>
+        </label>
       </header>
+      <div id="column-nav">
+        <div id="sidebar">
+          <a href="index.html" class="active-side side-a">خانه</a>
+          <a href="main-shop.html" class="side-a">فروشگاه</a>
+
+          <a href="contact.html" class="side-a">تماس با ما</a>
+          <a href="about.html" class="side-a">درباره ما</a>
+          <span class="">
+            <a
+              href="tel:+08134245652"
+              class="nav-item nav-link nav-contact side-a"
+              ><i class="bi bi-telephone-outbound"></i>(+81) 3424 5652</a
+            >
+          </span>
+        </div>
+      </div>
       <!-- end header -->
+    </div>
+    <!-- about -->
+    <div class="about">
+      <div class="container">
+        <div class="row d_flex d_grid">
+          <div class="col-md-6">
+            <div class="about_img">
+              <figure>
+                <img class="img_responsive" src="images/about1.png" alt="#" />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1 order_1_mobile">
+            <div class="titlepage text_align_right">
+              <h2>درباره دوربین های امنیتی</h2>
+              <p>
+                نیازهای روز افزون کشور به الکترونیک، فناوری اطلاعات و ارتباطات و
+                همچنین توسعه همه جانبه آن در سالهای اخیر و سیاست دولت جمهوری
+                اسلامی ایران مبنی بر واگذاری کار به بخش خصوصی، ما را بر آن داشت
+                تا با استفاده از پرسنل متخصص، مجرب و امکانات فنی مناسب تحت نام
+                شرکت سینا ارتباط فعالیت خود را در امور مخابرات و الکترونیک آغاز
+                نماییم تا با این حرکت، گامی هرچند کوچک در راستای تحقق اهداف دولت
+                جمهوری اسلامی ایران برداریم.
+              </p>
+              <a class="read_more dark-buttons" href="about.html"
+                >بیشتر بخوانید</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- about -->
-      <div  class="about">
-         <div class="container">
-            <div class="row d_flex d_grid">
-               <div class="col-md-6">
-                  <div class="about_img">
-                     <figure><img class="img_responsive" src="images/about1.png" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-5 offset-md-1 order_1_mobile">
-                  <div class="titlepage text_align_left">
-                       <h2>About cctv</h2>
-                        <p>it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                       <a class="read_more" href="about.html">Read More</a>
-                  </div>
-               </div>
+    </div>
+    <!-- end about -->
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="Informa">
+                <!-- <a class="logo_footer" href="index.html">Zlymo</a> -->
+                <img class="logo_footer" src="./images/site-logo.png" alt="" />
+                <!-- <p>
+                  Using 'Content here, content here', making it look like
+                  readable English. Many desktop publishing packages and web
+                  page editors
+                </p> -->
+              </div>
             </div>
-         </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="Informa helpful">
+                <h3>خدمات</h3>
+                <ul>
+                  <li><a href="index.html">خانه</a></li>
+                  <li><a href="about.html">درباره ما</a></li>
+                  <li><a href="company.html">شرکت</a></li>
+                  <li><a href="cctv.html">دوربین مداربسته</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="Informa conta">
+                <h3>ارتباط با ما</h3>
+                <ul>
+                  <li>
+                    <a href="Javascript:void(0)"
+                      ><i class="fa fa-phone" aria-hidden="true"></i>34245652
+                      (81+)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Javascript:void(0)">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      sina.ertebat@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Javascript:void(0)">
+                      <i class="fa fa-location-dot" aria-hidden="true"></i>
+
+                      آدرس : همدان، بلوار علویان، کوچه قصابان، ساختمان سینا
+                      ارتباط، کد پستی 6518667199
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="social_icon_box">
+              <h3>راه های ارتباط با ما</h3>
+              <ul class="social_icon text_align_center">
+                <li>
+                  <a href="Javascript:void(0)">
+                    <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)"
+                    ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col-md-3 col-sm-6">
+              <div class="Informa helpful">
+                <h3>NewsLetter</h3>
+                <form class="newslatter_form">
+                  <input
+                    class="ente"
+                    placeholder="Enter Your email"
+                    type="text"
+                    name="Enter your email"
+                  />
+                  <button class="subs_btn">Subscribe</button>
+                </form>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <!-- <div class="copyright text_align_center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <p>
+                  © 2022 All Rights Reserved. Design by
+                  <a href="https://html.design/"> Free Html Template</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
-      <!-- end about -->
-      <!-- footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-3 col-sm-6">
-                     <div class="Informa">
-                        <a class="logo_footer" href="index.html">Zlymo</a>
-                        <p>Using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors</p>
-                     </div>
-                  </div>
-                  <div class="col-md-3  col-sm-6">
-                     <div class="Informa helpful">
-                        <h3>Services</h3>
-                        <ul>
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="company.html">Company</a></li>
-                           <li><a href="cctv.html">CCTV</a></li>
-                           <li><a href="testimonial.html">Testimonial</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                 
-                  <div class="col-md-3 col-sm-6">
-                     <div class="Informa conta">
-                        <h3>Contact</h3>
-                        <ul>
-                          
-                           <li> <a href="Javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i> +01 1234567
-                              </a>
-                           </li>
-                           <li> <a href="Javascript:void(0)"> <i class="fa fa-envelope" aria-hidden="true"></i> demo@gmail.com
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                     <ul class="social_icon text_align_center">
-                        <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
-                        <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                        <li> <a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                        <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-                   <div class="col-md-3 col-sm-6">
-                      <div class="Informa helpful">
-                        <h3>NewsLetter</h3>
-                         <form class="newslatter_form">
-                        <input class="ente" placeholder="Enter Your email" type="text" name="Enter your email">
-                        <button class="subs_btn">Subscribe</button>
-                     </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright text_align_center">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-10 offset-md-1">
-                        <p>© 2022 All Rights Reserved. Design by  <a href="https://html.design/"> Free Html Template</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
