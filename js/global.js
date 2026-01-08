@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
-console.log(sidebar);
+
 
 const sidebarHandler = () => {
   sidebar.classList.toggle("flexDisp");

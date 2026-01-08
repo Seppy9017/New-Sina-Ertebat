@@ -1,0 +1,100 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+}
+#sign-type {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#sign-type h2 {
+  padding: 20px;
+  font-size: 1.7rem;
+  /* margin-left: 20px; */
+  background-color: #f8f8f8;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  color: rgb(121, 121, 121);
+}
+h2#login-txt {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+h2#sign-in-txt {
+  color: rgb(121, 121, 121);
+}
+#sign-in-form {
+  display: none;
+}
+#sign-slash {
+  font-size: 3rem;
+  margin: 0 20px;
+}
+body {
+  margin-top: -100px;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--color-primary);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 50px;
+  border-radius: 15px;
+}
+input {
+  border: 2px solid silver;
+  margin-bottom: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+input:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+button {
+  border: none;
+  background: var(--color-primary);
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all ease-in 0.2s;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+.back-but {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all ease-in 0.2s;
+  margin-bottom: 50px;
+  direction: ltr;
+}
+a p {
+  margin-left: 10px;
+}
+a:hover {
+  transform: scale(1.1);
+}

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- awesome fontfamily -->
     <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -109,6 +110,11 @@
             <div class="bars" id="bar2"></div>
             <div class="bars" id="bar3"></div>
           </label>
+          <img
+            src="./images/site-logo.png"
+            id="col-nav-logo-img"
+            alt="site logo"
+          />
           <label>
             <input class="toggle-checkbox" type="checkbox" />
             <div class="toggle-slot">
@@ -131,7 +137,7 @@
           </label>
         </header>
         <div id="column-nav">
-          <div id="sidebar"> 
+          <div id="sidebar">
             <a href="index.html" class="active-side side-a">خانه</a>
             <a href="main-shop.html" class="side-a">فروشگاه</a>
             <!-- <a href="service.html" class="side-a"> خدمات</a> -->
@@ -153,24 +159,9 @@
             <img src="images/previous-arrow.png" class="photo-buttons" />
           </button>
           <div class="poster-box">
-            <img
-              src="images/carousel-1.jpg"
-              alt=""
-              class="posters"
-              id="first"
-            />
-            <img
-              src="images/carousel-2.jpg"
-              alt=""
-              class="posters"
-              id="second"
-            />
-            <img
-              src="images/carousel-3.jpg"
-              alt=""
-              class="posters"
-              id="third"
-            />
+            <img src="./images/carousel-1.jpg" class="posters" id="first-poster" alt="" />
+            <img src="./images/carousel-2.jpg" class="posters" id="second-poster" alt="" />
+            <img src="./images/carousel-3.jpg" class="posters" id="third-poster" alt="" />
           </div>
           <button class="photo-btn-box" id="next">
             <img src="images/next-arrow.png" class="photo-buttons" />
@@ -241,13 +232,15 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="camera-box">
           <div class="col-md-4">
             <div id="ho_bg" class="cameras_text">
               <div class="cameras_img text_align_center">
                 <figure><img src="images/camera1.png" alt="#" /></figure>
               </div>
-              <p id="camera-light-text">قیمت :<br /><span>5,000,000 تومان</span></p>
+              <p id="camera-light-text">
+                قیمت :<br /><span>5,000,000 تومان</span>
+              </p>
               <h3>CCTV Camera</h3>
               <a class="read_more" href="cameras.html">خرید</a>
             </div>
@@ -257,7 +250,9 @@
               <div class="cameras_img text_align_center">
                 <figure><img src="images/camera2.png" alt="#" /></figure>
               </div>
-              <p id="camera-light-text">قیمت :<br /><span>5,000,000 تومان</span></p>
+              <p id="camera-light-text">
+                قیمت :<br /><span>5,000,000 تومان</span>
+              </p>
               <h3>CCTV Camera</h3>
               <a class="read_more" href="cameras.html">خرید</a>
             </div>
@@ -267,7 +262,9 @@
               <div class="cameras_img text_align_center">
                 <figure><img src="images/camera3.png" alt="#" /></figure>
               </div>
-              <p id="camera-light-text">قیمت :<br /><span>5,000,000 تومان</span></p>
+              <p id="camera-light-text">
+                قیمت :<br /><span>5,000,000 تومان</span>
+              </p>
               <h3>CCTV Camera</h3>
               <a class="read_more" href="cameras.html">خرید</a>
             </div>
@@ -277,7 +274,9 @@
               <div class="cameras_img text_align_center">
                 <figure><img src="images/camera4.png" alt="#" /></figure>
               </div>
-              <p id="camera-light-text">قیمت :<br /><span>5,000,000 تومان</span></p>
+              <p id="camera-light-text">
+                قیمت :<br /><span>5,000,000 تومان</span>
+              </p>
               <h3>CCTV Camera</h3>
               <a class="read_more" href="cameras.html">خرید</a>
             </div>
@@ -287,7 +286,9 @@
               <div class="cameras_img text_align_center">
                 <figure><img src="images/camera5.png" alt="#" /></figure>
               </div>
-              <p id="camera-light-text">قیمت :<br /><span>5,000,000 تومان</span></p>
+              <p id="camera-light-text">
+                قیمت :<br /><span>5,000,000 تومان</span>
+              </p>
               <h3>CCTV Camera</h3>
               <a class="read_more" href="cameras.html">خرید</a>
             </div>
@@ -297,7 +298,9 @@
               <div class="cameras_img text_align_center">
                 <figure><img src="images/camera6.png" alt="#" /></figure>
               </div>
-              <p id="camera-light-text">قیمت :<br /><span>5,000,000 تومان</span></p>
+              <p id="camera-light-text">
+                قیمت :<br /><span>5,000,000 تومان</span>
+              </p>
               <h3>CCTV Camera</h3>
               <a class="read_more" href="cameras.html">خرید</a>
             </div>
@@ -379,7 +382,7 @@
             </div>
           </div>
         </div>
-        <div class="row d_flex">
+        <div class="row d_flex contact-box">
           <div class="col-md-6">
             <form id="request" class="main_form">
               <div class="row">
@@ -433,19 +436,19 @@
     <!-- footer -->
     <footer>
       <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="Informa">
-                <!-- <a class="logo_footer" href="index.html">Zlymo</a> -->
-                <img class="logo_footer" src="./images/site-logo.png" alt="" />
-                <!-- <p>
+        <div class="footer-logo-box">
+          <div class="footer-logo">
+            <!-- <a class="logo_footer" href="index.html">Zlymo</a> -->
+            <img class="logo_footer" src="./images/site-logo.png" alt="" />
+            <!-- <p>
                   Using 'Content here, content here', making it look like
                   readable English. Many desktop publishing packages and web
                   page editors
                 </p> -->
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
             <div class="col-md-3 col-sm-6">
               <div class="Informa helpful">
                 <h3>خدمات</h3>
@@ -485,11 +488,11 @@
                 </ul>
               </div>
             </div>
-            <div id="social_icon_box">
+            <div id="social_icon_box" class="col-md-3">
               <h3>راه های ارتباط با ما</h3>
               <ul class="social_icon text_align_center">
                 <li>
-                  <a href="Javascript:void(0)">
+                  <a href="https://t.me/SinaErtebatCompany">
                     <i class="fa-brands fa-telegram" aria-hidden="true"></i>
                   </a>
                 </li>
@@ -499,7 +502,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="Javascript:void(0)"
+                  <a href=https://instagram.com/sinaertebat?igshid=mlwgfh4wrclh"
                     ><i class="fa-brands fa-instagram" aria-hidden="true"></i
                   ></a>
                 </li>
@@ -543,5 +546,6 @@
     <script src="js/custom.js"></script>
     <script src="js/global.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

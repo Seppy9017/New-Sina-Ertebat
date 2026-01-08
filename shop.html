@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Sina Ertebat</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- site logo  -->
+    <link rel="icon" href="./images/sinaertebat.png" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!--[if lt IE 9]> ><![endif]-->
+    <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <!-- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+  </head>
+  <body class="main-layout">
+    <div class="padd_30">
+      <div class="full_bf">
+        <!-- header -->
+        <header>
+          <nav>
+            <div id="nav-head">
+              <img
+                src="./images/site-logo.png"
+                id="site-logo-img"
+                alt="site logo"
+              />
+              <div id="search">
+                <input
+                  type="text"
+                  placeholder="محصول مورد نظر را جست‌و‌جو کنید"
+                />
+                <button id="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <!-- From Uiverse.io by JkHuger -->
+            </div>
+            <div id="nav-links">
+              <div id="link-box">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-solid fa-user"></i> خانه
+                </a>
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-solid fa-comment"></i>
+                  ارتباط با ما
+                </a>
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-user"></i>
+                  درباره ما
+                </a>
+                <a href="shop.html" class="nav-link link-active">
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                  فروشگاه
+                </a>
+              </div>
+              <label>
+                <input class="toggle-checkbox" type="checkbox" />
+                <div class="toggle-slot">
+                  <div class="sun-icon-wrapper">
+                    <div
+                      class="iconify sun-icon"
+                      data-icon="feather-sun"
+                      data-inline="false"
+                    ></div>
+                  </div>
+                  <div class="toggle-button"></div>
+                  <div class="moon-icon-wrapper">
+                    <div
+                      class="iconify moon-icon"
+                      data-icon="feather-moon"
+                      data-inline="false"
+                    ></div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </nav>
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
+          <img
+            src="./images/site-logo.png"
+            id="col-nav-logo-img"
+            alt="site logo"
+          />
+          <label>
+            <input class="toggle-checkbox" type="checkbox" />
+            <div class="toggle-slot">
+              <div class="sun-icon-wrapper">
+                <div
+                  class="iconify sun-icon"
+                  data-icon="feather-sun"
+                  data-inline="false"
+                ></div>
+              </div>
+              <div class="toggle-button"></div>
+              <div class="moon-icon-wrapper">
+                <div
+                  class="iconify moon-icon"
+                  data-icon="feather-moon"
+                  data-inline="false"
+                ></div>
+              </div>
+            </div>
+          </label>
+        </header>
+        <div id="column-nav">
+          <div id="sidebar">
+            <a href="index.html" class="side-a">خانه</a>
+            <a href="main-shop.html" class="active-side side-a">فروشگاه</a>
+            <!-- <a href="service.html" class="side-a"> خدمات</a> -->
+            <a href="contact.html" class="side-a">تماس با ما</a>
+            <a href="about.html" class="side-a">درباره ما</a>
+            <span class="">
+              <a
+                href="tel:+08134245652"
+                class="nav-item nav-link nav-contact side-a"
+                ><i class="bi bi-telephone-outbound"></i>(+81) 3424 5652</a
+              >
+            </span>
+          </div>
+        </div>
+        <!-- end header -->
+
+      </div>
+    </div>
+    <div id="shop-box">
+      <section id="products"></section>
+      <section id="cart">
+        <h3>سبد خرید</h3>
+        <section id="cart-list"><h5>کالایی یافت نشد</h5></section>
+        <section id="total-price">مجموع سبد خرید : <span>0</span></section>
+      </section>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer-logo-box">
+          <div class="footer-logo">
+            <!-- <a class="logo_footer" href="index.html">Zlymo</a> -->
+            <img class="logo_footer" src="./images/site-logo.png" alt="" />
+            <!-- <p>
+                  Using 'Content here, content here', making it look like
+                  readable English. Many desktop publishing packages and web
+                  page editors
+                </p> -->
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="Informa helpful">
+                <h3>خدمات</h3>
+                <ul>
+                  <li><a href="index.html">خانه</a></li>
+                  <li><a href="about.html">درباره ما</a></li>
+                  <li><a href="company.html">شرکت</a></li>
+                  <li><a href="cctv.html">دوربین مداربسته</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="Informa conta">
+                <h3>ارتباط با ما</h3>
+                <ul>
+                  <li>
+                    <a href="Javascript:void(0)"
+                      ><i class="fa fa-phone" aria-hidden="true"></i>34245652
+                      (81+)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Javascript:void(0)">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      sina.ertebat@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Javascript:void(0)">
+                      <i class="fa fa-location-dot" aria-hidden="true"></i>
+
+                      آدرس : همدان، بلوار علویان، کوچه قصابان، ساختمان سینا
+                      ارتباط، کد پستی 6518667199
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="social_icon_box" class="col-md-3">
+              <h3>راه های ارتباط با ما</h3>
+              <ul class="social_icon text_align_center">
+                <li>
+                  <a href="https://t.me/SinaErtebatCompany">
+                    <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/sinaertebat?igshid=mlwgfh4wrclh"
+                    ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col-md-3 col-sm-6">
+              <div class="Informa helpful">
+                <h3>NewsLetter</h3>
+                <form class="newslatter_form">
+                  <input
+                    class="ente"
+                    placeholder="Enter Your email"
+                    type="text"
+                    name="Enter your email"
+                  />
+                  <button class="subs_btn">Subscribe</button>
+                </form>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <!-- <div class="copyright text_align_center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <p>
+                  © 2022 All Rights Reserved. Design by
+                  <a href="https://html.design/"> Free Html Template</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/app.js"></script>
+    <script type="module" src="js/shop.js"></script>
+  </body>
+</html>

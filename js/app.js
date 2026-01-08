@@ -2,12 +2,13 @@
 // انتخاب عناصر DOM
 // ===============================
 const slider = document.querySelector(".poster-box");
-const slides = slider.children;
+const slides = slider.children    ;
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("previous");
 const nextIcon = nextBtn.children[0];
 const prevIcon = prevBtn.children[0];
 const dots = document.querySelector(".dot-box").children;
+
 
 // ===============================
 // متغیرهای کنترلی
@@ -169,6 +170,7 @@ slider.addEventListener("touchend", () => {
 showSlide(index);
 startAutoSlide();
 
+//  shop
 // ===============================
 // Lazy Load برای تمام پاراگراف‌ها
 // ===============================
